@@ -1,0 +1,29 @@
+.politicas {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  height: 50px;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.politicas a {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.politicas a:hover {
+  color: #00c6ff;
+}
+
+.router-link-active {
+  font-weight: bold;
+  text-decoration: underline;
+}

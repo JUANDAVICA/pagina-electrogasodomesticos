@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 .contenedor {
   display: flex;
-  max-width: 1200px;
-  height: 450px;
-  margin: 30px auto;
-  padding: 0 20px;
-  gap: 20px;
+  max-width: 570px;
+  height: 520px;
+  margin-left: 15dvh;
+  align-items: flex-start;
 }
 
 .inicio {
@@ -14,28 +14,26 @@
 
 .Title{
   margin: 0;
-  font-family: "Merriweather", serif;
+  font-family: "Cormorant Garamond", serif;
   text-align: center;
-  color: #5603ad;
-  font-size: 35px;
-  letter-spacing: 5.7px;
+  color: #FFFCEB;
+  font-size: 70px;
+  font-weight: 500;
 }
 
 .Info{
   margin: 0;
-  margin-top: 30px;
+  margin-top: 40px;
   font-family: "Noto Serif", serif;
   text-align: justify;
   font-size: 20px;
   line-height: 2.1;
+  color: #FFFCEB;
+  background-color: rgba(0, 0, 0, 0.39);
+  display: inline-block;
+  border-radius: 6px;
 }
 
-.imagen {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .inicio{
   animation: aparecer 1s ease-out forwards;
@@ -46,6 +44,10 @@
   to {opacity: 1; transform: translateY(0);}
 }
 
+.choose-us-container{
+  background-color: white;
+}
+
 .inicio-imagen{
   width: 450px;
   height: 450px;
@@ -53,16 +55,17 @@
 }
 
 .slider-title {
+  padding-top: 25px;
   text-align: center;
   font-size: 40px;
-  margin-bottom: 20px;
-  font-family: "Merriweather", serif;
-  letter-spacing: 5.7px;
+  font-family: "Cormorant Garamond", serif;
+  letter-spacing: 0.4dvh;
+  font-weight: 1100;
 }
 
 .choose-us {
   overflow: hidden;
-  min-height: 200px;
+  min-height: 60px;
   display: flex;
   align-items: center;
   position: relative;
@@ -87,20 +90,21 @@
   justify-content: flex-end;
   font-family: "Noto Serif", serif;
   width: 200px;
-  height: 200px;
+  height: 150px;
   cursor: pointer;
   position: relative;
   transition: all 0.3s ease;
   padding-top: 20px;
+  margin-bottom: 0px;
 }
 
 .choose-us li:hover {
-  height: 240px;
+  height: 190px;
 }
 
 .choose-us li i {
   font-size: 70px;
-  color: #40916c;
+  color: #003049;
   margin-bottom: 5px;
   transition: transform 0.3s;
 }
@@ -123,6 +127,16 @@
 .choose-us li:hover span {
   opacity: 1;
   max-height: 60px;
+}
+
+.choose-us-container{
+  margin: 0px;
+  margin-top: 50px;
+  background-color: white;
+}
+
+.choose-us-container h1{
+  margin: 0;
 }
 
 @keyframes slideIcons {

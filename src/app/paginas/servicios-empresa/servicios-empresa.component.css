@@ -1,0 +1,183 @@
+.body {
+  background-color: white;
+}
+
+.title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+  align-items: center;
+  justify-items: center;
+  letter-spacing: 0.4px;
+  margin-top: 0px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.title h1 {
+  margin: 0px;
+}
+
+.servicios {
+  display: grid;
+  gap: 16px;
+  grid-template-areas:
+    "mantenimiento instalacion garantia"
+    "mantenimiento diagnostico atencion"
+    "asesoramiento venta atencion";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: auto;
+  padding: 30px;
+}
+
+.Mantenimiento {
+  grid-area: mantenimiento;
+}
+
+.Instalacion {
+  grid-area: instalacion;
+}
+
+.Asesoramiento {
+  grid-area: asesoramiento;
+}
+
+.Venta {
+  grid-area: venta;
+}
+
+.Diagnostico {
+  grid-area: diagnostico;
+}
+
+.Garantia {
+  grid-area: garantia;
+}
+
+.Atencion {
+  grid-area: atencion;
+}
+
+/* Estilos comunes para todos los bloques */
+.servicios > div {
+  border: 2px solid #013a63;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-height: 120px;
+}
+
+/* Fondo con color y opacidad al hacer hover */
+.servicios > div::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 48, 73, 0.95); /* Cambia aquí el color y opacidad */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.servicios > div:hover::before {
+  opacity: 1;
+}
+
+/* Ícono visible siempre */
+.servicios img {
+  width: 140px;
+  height: 140px;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+.Mantenimiento img,
+.Atencion img {
+  width: 200px;
+  height: 200px;
+}
+
+/* Ocultar texto inicialmente */
+.servicios h2,
+.servicios p {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  width: 90%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 10px;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  word-wrap: break-word;
+  margin: 0;
+  max-height: 80%;
+  overflow: hidden;
+}
+
+/* Mostrar texto al pasar el mouse */
+.servicios > div:hover h2,
+.servicios > div:hover p {
+  opacity: 0.9;
+}
+
+/* Ajuste fino de posiciones */
+.servicios h2 {
+  align-items: center;
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.servicios p {
+  top: 60%;
+  align-items: center;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 1;
+}
+
+/* Posiciones personalizadas por sección */
+.servicios .Instalacion h2,
+.servicios .Diagnostico h2,
+.servicios .Asesoramiento h2,
+.servicios .Garantia h2 {
+  top: 25%;
+}
+
+.servicios .Instalacion p,
+.servicios .Diagnostico p,
+.servicios .Asesoramiento p,
+.servicios .Garantia p {
+  top: 40%;
+}
+
+.servicios .Venta h2 {
+  top: 12%;
+}
+
+.servicios .Venta p {
+  top: 48%;
+}
+
+.servicios .Mantenimiento h2 {
+  top: 40%;
+}
+
+.servicios .Mantenimiento p {
+  top: 50%;
+}
+
+.servicios .Atencion h2 {
+  top: 30%;
+}
+
+.servicios .Atencion p {
+  top: 40%;
+}

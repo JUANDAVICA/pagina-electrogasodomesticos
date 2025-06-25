@@ -2,6 +2,7 @@ import { Component, ViewChild, ElementRef} from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
+  standalone: true,
   selector: 'app-inicio',
   imports: [CommonModule],
   templateUrl: './inicio.component.html',
@@ -21,7 +22,7 @@ export class InicioComponent {
     },
     { icon: 'bi bi-android', text: 'Soporte antes, durante y después.' },
     { icon: 'bi bi-cash-coin', text: 'Precios justos sin costos ocultos.' },
-    { icon: 'bi bi-calendar2-week', text: '10+ años de experiencia.' },
+    { icon: 'bi bi-calendar2-week', text: '+10 años de experiencia.' },
     { icon: 'bi bi-car-front', text: 'Cobertura en toda la ciudad.' },
   ];
 

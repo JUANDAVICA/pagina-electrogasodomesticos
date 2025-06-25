@@ -1,0 +1,42 @@
+.garantias-reembolsos {
+  background-color: white;
+  min-height: 100vh;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.garantias-contenido {
+  max-width: 800px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.8;
+}
+
+.garantias-contenido h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: "Cormorant Garamond", serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #111;
+}
+
+.garantias-contenido h2 {
+  font-size: 22px;
+  margin-top: 30px;
+  color: #000;
+}
+
+.garantias-contenido ul {
+  margin-left: 20px;
+  list-style: disc;
+}
+
+.garantias-contenido p {
+  margin-bottom: 16px;
+}
